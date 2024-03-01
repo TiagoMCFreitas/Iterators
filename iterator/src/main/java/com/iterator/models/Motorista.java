@@ -4,15 +4,15 @@ public class Motorista {
     private int id;
     private String name;
     private String country;
-    private String teamNumber;
+    private String age;
     private String firstTeam;
     private String currentTeam;
 
-    public Motorista(int id, String name, String country, String teamNumber, String firstTeam, String currentTeam) {
+    public Motorista(int id, String name, String country, String age, String firstTeam, String currentTeam) {
         this.id = id;
         this.name = name;
         this.country = country;
-        this.teamNumber = teamNumber;
+        this.age = age;
         this.firstTeam = firstTeam;
         this.currentTeam = currentTeam;
     }
@@ -22,7 +22,7 @@ public class Motorista {
         this.id = Integer.parseInt(vet[0]);
         this.name = vet[1];
         this.country = vet[2];
-        this.teamNumber = vet[3];
+        this.age = vet[3];
         this.firstTeam = vet[4];
         this.currentTeam = vet[5];
         
@@ -71,17 +71,17 @@ public class Motorista {
     }
 
     /**
-     * @return String return the teamNumber
+     * @return String return the age
      */
-    public String getTeamNumber() {
-        return teamNumber;
+    public String getage() {
+        return age;
     }
 
     /**
-     * @param teamNumber the teamNumber to set
+     * @param age the age to set
      */
-    public void setTeamNumber(String teamNumber) {
-        this.teamNumber = teamNumber;
+    public void setage(String age) {
+        this.age = age;
     }
 
     /**
